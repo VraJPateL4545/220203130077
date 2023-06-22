@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.hover-effect {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+.hover-effect::before,
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(125, 0, 251, 0.5);
+  width: 0%;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-effect::before {
+  top: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.hover-effect::after {
+  top: 0;
+  right: 0;
+  transform-origin: right;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  width: 50%;
+}
+
+.hover-effect h1 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.hover-effect:hover h1 {
+  color: #000;
+}
+
+
+</style>
+<body>
+    <div class="hover-effect">
+        <h1>button</h1>
+      </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style >
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL">
+			<li>car
+				<ul>
+					<li>Toyota
+						<ul>
+							<li style="color:red ;">supra
+							<ul>
+								<li> 1993</li>
+							</ul></li>
+							<li style="color:rgb(52, 34, 156) ;"> supraA90
+								<ul>
+									<li> 2023</li>
+								</ul></li>
+							</li>
+						</ul>
+					</li>
+					<li>nissan 
+						<ul>
+							<li>gtr</li>
+							<li>r34</li>	
+							<li>R33</li>
+							<li>R32</li>
+							<li>R35</li>
+							<li></li>									
+						</ul>
+					</li>
+					
+					
+					
