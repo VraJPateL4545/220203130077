@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter text" onblur="getVal()">
+    <p id="demo"></p>
+    <p id="demo_2"></p>
+</body>
+<script>
+    document.getElementById("demo").innerHTML = 5+8;
+    document.write(5 + 6  )
+    console.log(5 + 6);
+    console.log(5 + 6);
+    window.alert("Alert")
+    
+    function getVal(){    
+        let vraj = document.querySelector("input").value;
+        document.getElementById("demo_2").innerHTML = vraj;
+    }
+</script><br>
+<button type="button" onclick="document.write(10+11)">Try it</button>
+
+</html>
